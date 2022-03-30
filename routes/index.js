@@ -8,7 +8,7 @@ const API_key = 'c9e9fcaa3c3dc20fc38001043c133c5f';
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Express' }); // change to render {data:response.data}
 });
 router.get('/submit', function(req,res,next){
   const city = req.query.city;
